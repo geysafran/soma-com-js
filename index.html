@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>soma simples</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <form onsubmit="calc(event);">
+        <p>Soma
+        </p>
+            <input type="number" id="number1" required />
+            <input type="number" id="number2" required />
+            <button>
+               calc
+            </button>
+    </form>
+    <script type="text/javascript">
+        function calc(event){
+             event.preventDefault();
+            const number1 = document.querySelector('#number1').value;
+            const number2 = document.querySelector('#number2').value;
+            const p = document.querySelector('p');
+            p.innerHTML = 'Soma= ' + (parseInt(number1) + parseInt(number2));
+            console.log(text);
+        };
+    </script>
+</body>
+</html>
